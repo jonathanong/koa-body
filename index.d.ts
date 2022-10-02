@@ -3,7 +3,7 @@ import { File, Files } from 'formidable';
 
 declare module "koa" {
     interface Request extends Koa.BaseRequest {
-        body?: any;
+        body?: unknown;
         files?: Files;
     }
 }
